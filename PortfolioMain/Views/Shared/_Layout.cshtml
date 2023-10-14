@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>My Website</title>
+</head>
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero">
+                        <h1><span>C</span>himezirim <span>A</span>mahuo</h1>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#hero" data-after="Home">Home</a></li>
+                        <li><a href="#services" data-after="Service">Services</a></li>
+                        <li><a href="#projects" data-after="Projects">Projects</a></li>
+                        <li><a href="#about" data-after="About">About</a></li>
+                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF HEADER -->
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1><span>C</span>himezirim <span>A</span>mahuo</h1>
+            </div>
+            <h2>Socials</h2>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="https://facebook.com/"><img src="~/img/facebook.png" /> </a>
+                    
+                </div>
+                <div class="social-item">
+                    <a href="https://instagram.com/"><img src="~/img/instagram.png" /></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://twitter.com/"><img src="~/img/twitter.png" /></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.linkedin.com/in/chimezirim-amahuo-066019277/"><img src="~/img/linkedin.png" /></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://github.com/gintex232/"><img src="~/img/github.png" /></a>
+                </div>
+            </div>
+            <p>Copyright © 2023 Gintex. All rights reserved</p>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <script src="~/app.js"></script>
+    
+</body>
+</html>
